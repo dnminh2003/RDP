@@ -36,7 +36,7 @@ sudo apt install --assume-yes xfce4 desktop-base xfce4-terminal
 echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" | sudo tee /etc/chrome-remote-desktop-session
 sudo apt remove --assume-yes gnome-terminal
 sudo apt install --assume-yes xscreensaver
-sudo systemctl disable lightdm.service
+sudo service lightdm stop
 
 echo "Installing Google Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
